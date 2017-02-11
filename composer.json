@@ -1,0 +1,12 @@
+{
+    "require": {
+        "silex/silex": "~2.0",
+        "twig/twig": "^2.1",
+        "symfony/translation": "^3.2",
+        "symfony/config": "^3.2",
+        "symfony/yaml": "^3.2",
+        "symfony/twig-bridge": "^3.2",
+        "symfony/templating": "^3.2",
+        "symfony/asset": "^3.2"
+    }
+}
