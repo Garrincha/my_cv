@@ -4,19 +4,181 @@
    Author's custom styles
    ========================================================================== */
 
+#navbar {
 
+}
 
+#intro {
+    background-image: linear-gradient(to bottom, darkcyan 50%, lightcyan 100%)
+    /*background: url('/img/background_1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+}
 
+#about {
+    /*background: url('/img/background_2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+}
 
+.cv-name {
+    font-family: 'Helvetica', Fallback, sans-sherif;
+    font-size: 80px;
+    color:snow;
+}
+.cv-job {
+    font-size: 70px;
+    font-family: 'Helvetica', Fallback, sans-sherif;
+    color: whitesmoke;
+}
+.cv-company-logo {
 
+}
+.cv-company {
+    font-size: 60px;
+    font-family: 'Helvetica', Fallback, sans-sherif;
+    color:lightgrey;
+}
+.cv-description {
+    padding-top: 50px;
+    font-size: 30px;
+}
 
+.cv-header-head {
+    font-size: 30px;
+    color: darkcyan!important;
+}
+.cv-header {
+    color: darkcyan!important;
+}
+.nav.navbar-nav {
+    padding-left: 100px;
+}
+.cv-box {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding-left: 0px;
+}
+.cv-left {
+    /*float:left;
+    width: 50%;
+    height: 100%;*/
+    /*background-color: gre*/
+    /*background: url('/img/benoit_goepfert.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+}
+.cv-right {
+    /*float: left;
+    width: 50%;
+    height: 100%;*/
+}
+.cv-label {
+    text-align: right;
+    text-transform: uppercase;
+    color: darkcyan;
+}
+.cv-field {
+    text-align: left;
+}
+.cv-profile {
+    font-family: 'Helvetica', Fallback, sans-sherif;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.cv-profile-head {
+    font-family: 'Helvetica', Fallback, sans-sherif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.cv-contact-head {
+    font-family: 'Helvetica', Fallback, sans-sherif;
+    font-size: 30px;
+    text-align: right;
+}
 
+.timeline ul.ul-timeline li.li-timeline {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: darkcyan;
+}
 
+.timeline ul.ul-timeline li.li-timeline::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: inherit;
+}
 
+.timeline ul.ul-timeline li.li-timeline div.job-timeline {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: darkcyan;
+  color: whitesmoke;
+  border-radius: 10px;
+  text-align: left;
+}
 
+.timeline ul.ul-timeline li.li-timeline div.job-timeline::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
 
+.timeline ul.ul-timeline li.li-timeline:nth-child(odd) div.job-timeline {
+  left: 45px;
+}
 
+.timeline ul.ul-timeline li.li-timeline:nth-child(odd) div.job-timeline::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
 
+  border-color: transparent darkcyan transparent transparent;
+}
 
+.timeline ul.ul-timeline li.li-timeline:nth-child(even) div.job-timeline {
+  left: -439px;
+}
 
+.timeline ul.ul-timeline li.li-timeline:nth-child(even) div.job-timeline::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent darkcyan;
+}
 
+.timeline .cv-job-period {
+    border-bottom: solid;
+}
+
+.timeline .cv-job-description {
+
+}
+
+.timeline .cv-job-actions {
+
+}
+
+.timeline .cv-job-skills {
+
+}

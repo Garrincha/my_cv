@@ -1,7 +1,21 @@
 app:
   title:
+    intro: Introduction
     background: Expérience Professionnelle
     skills: Compétences techniques
     activites: Loisirs & acivités
     contact: Contact
     about: Présentation
+  intro:
+    job: Software Engineer
+    company: Sopra Steria
+    description: Développeur Java/PHP curieux et enthousiaste, je suis particulièrement intéressé par les nouvelles méthodologies agile/devops/software craftmanshift depuis quelques temps. Assistant régulièrement à des meetups et des conférences, j'essaie d'amener de la rigueur, de l'exigence et de la bonne humeur au sein des projets auxquels je participe.
+  about:
+    firstname: Prénom
+    lastname: Nom
+    birthdate: Date de naissance
+    phonenumber: Numéro de téléphone
+    email: Adresse email
+    adress: Adresse postale
+    profile: Profil
+    contact: Contact    

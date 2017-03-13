@@ -9,13 +9,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CV - Benoit Goepfert - {{ name }}</title>
+    <title>CV - Benoit Goepfert</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="/css/bootstrap-social-gh-pages/bootstrap-social.css" rel="stylesheet"> -->
 
     <!-- Custom CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="/css/scrolling-nav.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,49 +28,75 @@
 
 </head>
 
+<script type="text/javascript">
+    function downloadJSAtOnload() {
+        var element2 = document.createElement("script");
+        element2.src = "js/bootstrap.min.js";
+        document.body.appendChild(element2);
+
+        var element3 = document.createElement("script");
+        element3.src = "js/jquery.easing.min.js";
+        document.body.appendChild(element3);
+
+        var element4 = document.createElement("script");
+        element4.src = "js/scrolling-nav.js";
+        document.body.appendChild(element4);
+    }
+
+    if (window.addEventListener) {
+        window.addEventListener("load", downloadJSAtOnload, false);
+    } else if (window.attachEvent) {
+        window.attachEvent("onload", downloadJSAtOnload);
+    } else {
+        window.onload = downloadJSAtOnload;
+    }
+</script>
+
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
-            </div>
+        <section id="navbar">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll cv-header-head" href="#page-top">{{ data.firstName }} {{ data.lastName }}</a>
+                </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">{{'app.title.about'|trans}}</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#background">{{'app.title.background'|trans}}</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#skills">{{'app.title.skills'|trans}}</a>
-                    </li>                    
-                    <li>
-                        <a class="page-scroll" href="#activities">{{'app.title.activities'|trans}}</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">{{'app.title.contact'|trans}}</a>
-                    </li>
-                </ul>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a class="cv-header page-scroll" href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="cv-header page-scroll" href="#about">{{'app.title.about'|trans}}</a>
+                        </li>
+                        <li>
+                            <a class="cv-header page-scroll" href="#background">{{'app.title.background'|trans}}</a>
+                        </li>
+                        <li>
+                            <a class="cv-header page-scroll" href="#skills">{{'app.title.skills'|trans}}</a>
+                        </li>
+                        <li>
+                            <a class="cv-header page-scroll" href="#activities">{{'app.title.activities'|trans}}</a>
+                        </li>
+                        <li>
+                            <a class="cv-header page-scroll" href="#contact">{{'app.title.contact'|trans}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
+        </section>
         <!-- /.container -->
     </nav>
 
@@ -77,9 +105,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+                    <!-- <h1 class="cv-name">{{ data.name }}</h1> -->
+                    <h2 class="cv-job">{{ 'app.intro.job' | trans }}</h2>
+                    <h3 class="cv-company">{{ 'app.intro.company' | trans }}</h3>
+                    <p class="cv-description">{{ 'app.intro.description' | trans }}</p>
+                    <!-- <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a> -->
                 </div>
             </div>
         </div>
@@ -91,6 +121,55 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>{{ 'app.title.about'|trans }}</h1>
+                    <div  class="cv-box col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <!-- <div class="col-lg-1"></div> -->
+                                <img src='/img/benoit_goepfert.png' class='img-responsive' alt='me'>
+                                <!-- <div class="col-lg-1"></div> -->
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="cv-profile-head col-lg-12">{{ 'app.about.profile'|trans }}</div>
+                                <div class="cv-profile col-lg-12">
+                                    <div class="cv-label col-lg-6">{{ 'app.about.firstname'|trans }}</div>
+                                    <div class="cv-field col-lg-6">{{ data.firstName }}</div>
+                                </div>
+                                <div class="cv-profile col-lg-12">
+                                    <div class="cv-label col-lg-6">{{ 'app.about.lastname'|trans }}</div>
+                                    <div class="cv-field col-lg-6">{{ data.lastName }}</div>
+                                </div>
+                                <div class="cv-profile col-lg-12">
+                                    <div class="cv-label col-lg-6">{{ 'app.about.birthdate'|trans }}</div>
+                                    <div class="cv-field col-lg-6">{{ data.birthDate }}</div>
+                                </div>
+                                <div class="cv-profile col-lg-12">
+                                    <div class="cv-label col-lg-6">{{ 'app.about.email'|trans }}</div>
+                                    <div class="cv-field col-lg-6">{{ data.email }}</div>
+                                </div>
+                                <div class="cv-profile col-lg-12">
+                                    <div class="cv-label col-lg-6">{{ 'app.about.adress'|trans }}</div>
+                                    <div class="cv-field col-lg-6">{{ data.adress }}</div>
+                                </div>
+                                <div class="cv-profile col-lg-12">
+                                    <div class="cv-label col-lg-6">{{ 'app.about.phonenumber'|trans }}</div>
+                                    <div class="cv-field col-lg-6">{{ data.phoneNumber }}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row">
+                            <div class="cv-profile-bottom col-lg-12">
+                                <div class="cv-contact-head col-lg-4">{{ 'app.about.contact'|trans }}</div>
+                                <div class="col-lg-8">
+                                    <div class="btn btn-social-icon btn-lg btn-twitter"></div>
+                                    <div class="btn btn-social-icon btn-lg btn-twitter"></div>
+                                    <div class="btn btn-social-icon btn-lg btn-twitter"></div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- <div class="section bottom">
+                        <a class="btn btn-default page-scroll" href="#background">Suite</a>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -102,6 +181,180 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>{{ 'app.title.background'|trans }}</h1>
+                    <div class="timeline">
+                        <ul class="ul-timeline">
+                            <li class="li-timeline">
+                                <div class="job-timeline">
+                                    <div class="cv-job-period">
+                                        <h4>{{ 'app.jobs.job3.period' | trans }}</h4>
+                                    </div>
+                                    <div class="cv-job-description">
+                                        <h3>{{ 'app.job.description' | trans }}</h3>
+                                        <p>{{ 'app.jobs.job3.description' | trans }}</p>
+                                    </div>
+                                    <div class="cv-job-actions">
+                                        <h3>{{ 'app.job.actions' | trans }}</h3>
+                                        <ul>
+                                            <li>
+                                                {{ 'app.jobs.job3.actions.action1' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job3.actions.action2' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job3.actions.action3' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job3.actions.action4' | trans }}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="cv-job-technologies">
+                                        <h3>{{ 'app.job.technologies' | trans }}</h3>
+                                        <ul>
+                                            <li>
+                                                {{ 'app.jobs.job3.technologies.techno1' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job3.technologies.techno2' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job3.technologies.techno3' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job3.technologies.techno4' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job3.technologies.techno5' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job3.technologies.techno6' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job3.technologies.techno7' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job3.technologies.techno8' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job3.technologies.techno9' | trans }}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="li-timeline">
+                                <div class="job-timeline">
+                                    <div class="cv-job-period">
+                                        <h4>{{ 'app.jobs.job2.period' | trans }}</h4>
+                                    </div>
+                                    <div class="cv-job-description">
+                                        <h3>{{ 'app.job.description' | trans }}</h3>
+                                        <p>{{ 'app.jobs.job2.description' | trans }}</p>
+                                    </div>
+                                    <div class="cv-job-actions">
+                                        <h3>{{ 'app.job.actions' | trans }}</h3>
+                                        <ul>
+                                            <li>
+                                                {{ 'app.jobs.job2.actions.action1' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job2.actions.action2' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job2.actions.action3' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job2.actions.action4' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job2.actions.action5' | trans }}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="cv-job-technologies">
+                                        <h3>{{ 'app.job.technologies' | trans }}</h3>
+                                        <ul>
+                                            <li>
+                                                {{ 'app.jobs.job2.technologies.techno1' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job2.technologies.techno2' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job2.technologies.techno3' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job2.technologies.techno4' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job2.technologies.techno5' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job2.technologies.techno6' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job2.technologies.techno7' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job2.technologies.techno8' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job2.technologies.techno9' | trans }}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="li-timeline">
+                                <div class="job-timeline">
+                                    <div class="cv-job-period">
+                                        <h4>{{ 'app.jobs.job1.period' | trans }}</h4>
+                                    </div>
+                                    <div class="cv-job-description">
+                                        <h3>{{ 'app.job.description' | trans }}</h3>
+                                        <p>{{ 'app.jobs.job1.description' | trans }}</p>
+                                    </div>
+                                    <div class="cv-job-actions">
+                                        <h3>{{ 'app.job.actions' | trans }}</h3>
+                                        <ul>
+                                            <li>
+                                                {{ 'app.jobs.job1.actions.action1' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job1.actions.action2' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job1.actions.action3' | trans }}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="cv-job-technologies">
+                                        <h3>{{ 'app.job.technologies' | trans }}</h3>
+                                        <ul>
+                                            <li>
+                                                {{ 'app.jobs.job1.technologies.techno1' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job1.technologies.techno2' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job1.technologies.techno3' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job1.technologies.techno4' | trans }}
+                                            </li>
+                                            <li>
+                                                {{ 'app.jobs.job1.technologies.techno5' | trans }}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a class="btn btn-default page-scroll" href="#skills">Click Me to Scroll Down!</a>
                 </div>
             </div>
         </div>
@@ -113,6 +366,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>{{ 'app.title.skills'|trans }}</h1>
+                    <a class="btn btn-default page-scroll" href="#activities">Click Me to Scroll Down!</a>
                 </div>
             </div>
         </div>
@@ -124,6 +378,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>{{ 'app.title.activities'|trans }}</h1>
+                    <a class="btn btn-default page-scroll" href="#contact">Click Me to Scroll Down!</a>
                 </div>
             </div>
         </div>
@@ -135,21 +390,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>{{ 'app.title.contact'|trans }}</h1>
+                    <a class="btn btn-default page-scroll" href="#intro">Go back to the top!</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- jQuery -->
     <script src="js/jquery-1.11.2.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
-
 </body>
-
 </html>

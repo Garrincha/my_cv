@@ -1,0 +1,11 @@
+parameters:
+  firstName: Benoit
+  lastName: Goepfert
+  birthDate: 26/06/1987
+  email: goepfert.benoit@gmail.com
+  phoneNumber: 06 73 93 14 69
+  adress: 25 rue Marx Dormoy 92260 Fontenay-aux-Roses
+  name: Benoit Goepfert
+  job: Consultant / Développeur
+  company: Sopra Steria
+  description: 
