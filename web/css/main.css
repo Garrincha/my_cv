@@ -18,11 +18,24 @@
 }
 
 #about {
+    background-color: white;
     /*background: url('/img/background_2.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;*/
+}
+
+#background {
+    background-color: white;
+}
+
+#skills {
+    background-color: white;
+}
+
+.container .row h1 {
+    color: darkcyan;
 }
 
 .cv-name {
@@ -62,6 +75,7 @@
     background-color: whitesmoke;
     border-radius: 5px;
     padding-left: 0px;
+    border: solid darkcyan;
 }
 .cv-left {
     /*float:left;
@@ -98,6 +112,7 @@
     text-align: center;
     padding-top: 20px;
     padding-bottom: 50px;
+    color: darkcyan;
 }
 .cv-contact-head {
     font-family: 'Helvetica', Fallback, sans-sherif;
