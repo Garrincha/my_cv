@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CV - Benoit Goepfert</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="/css/bootstrap-social-gh-pages/bootstrap-social.css" rel="stylesheet"> -->
+
+    <!-- Custom CSS -->
+    <link href="/css/scrolling-nav.css" rel="stylesheet">
+    <link href="/css/main.scss" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<script type="text/javascript">
+    function downloadJSAtOnload() {
+        var element2 = document.createElement("script");
+        element2.src = "js/bootstrap.min.js";
+        document.body.appendChild(element2);
+
+        var element3 = document.createElement("script");
+        element3.src = "js/jquery.easing.min.js";
+        document.body.appendChild(element3);
+
+        var element4 = document.createElement("script");
+        element4.src = "js/scrolling-nav.js";
+        document.body.appendChild(element4);
+    }
+
+    if (window.addEventListener) {
+        window.addEventListener("load", downloadJSAtOnload, false);
+    } else if (window.attachEvent) {
+        window.attachEvent("onload", downloadJSAtOnload);
+    } else {
+        window.onload = downloadJSAtOnload;
+    }
+</script>
+
+<body>
+    <div class="container cv-header">
+        <div class="row">
+            <div class="col-lg-12 cv-section-intro">
+                <h2 class="cv-job2">{{ 'app.intro.job' | trans }}</h2>
+                <p class="cv-description">{{ 'app.intro.description' | trans }}</p>
+            </div>
+
+            <div class="col-lg-12 cv-section-profile">
+                <div  class="cv-box col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src='/img/benoit_goepfert.png' class='img-responsive' alt='me'>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="cv-profile-head col-lg-12">{{ 'app.about.profile'|trans }}</div>
+                            <div class="cv-profile col-lg-12">
+                                <div class="cv-label col-lg-6">{{ 'app.about.firstname'|trans }}</div>
+                                <div class="cv-field col-lg-6">{{ data.firstName }}</div>
+                            </div>
+                            <div class="cv-profile col-lg-12">
+                                <div class="cv-label col-lg-6">{{ 'app.about.lastname'|trans }}</div>
+                                <div class="cv-field col-lg-6">{{ data.lastName }}</div>
+                            </div>
+                            <div class="cv-profile col-lg-12">
+                                <div class="cv-label col-lg-6">{{ 'app.about.birthdate'|trans }}</div>
+                                <div class="cv-field col-lg-6">{{ data.birthDate }}</div>
+                            </div>
+                            <div class="cv-profile col-lg-12">
+                                <div class="cv-label col-lg-6">{{ 'app.about.email'|trans }}</div>
+                                <div class="cv-field col-lg-6">{{ data.email }}</div>
+                            </div>
+                            <div class="cv-profile col-lg-12">
+                                <div class="cv-label col-lg-6">{{ 'app.about.adress'|trans }}</div>
+                                <div class="cv-field col-lg-6">{{ data.adress }}</div>
+                            </div>
+                            <div class="cv-profile col-lg-12">
+                                <div class="cv-label col-lg-6">{{ 'app.about.phonenumber'|trans }}</div>
+                                <div class="cv-field col-lg-6">{{ data.phoneNumber }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="timeline">
+                    <ul class="ul-timeline">
+                        <li class="li-timeline">
+                            <div class="job-timeline">
+                                <div class="cv-job-period">
+                                    <h4>{{ 'app.jobs.job3.period' | trans }}</h4>
+                                </div>
+                                <div class="cv-job-description">
+                                    <h3>{{ 'app.job.description' | trans }}</h3>
+                                    <p>{{ 'app.jobs.job3.description' | trans }}</p>
+                                </div>
+                                <div class="cv-job-actions">
+                                    <h3>{{ 'app.job.actions' | trans }}</h3>
+                                    <ul>
+                                        <li>
+                                            {{ 'app.jobs.job3.actions.action1' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job3.actions.action2' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job3.actions.action3' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job3.actions.action4' | trans }}
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cv-job-technologies">
+                                    <h3>{{ 'app.job.technologies' | trans }}</h3>
+                                    <ul>
+                                        <li>
+                                            {{ 'app.jobs.job3.technologies.techno1' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job3.technologies.techno2' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job3.technologies.techno3' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job3.technologies.techno4' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job3.technologies.techno5' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job3.technologies.techno6' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job3.technologies.techno7' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job3.technologies.techno8' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job3.technologies.techno9' | trans }}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li-timeline">
+                            <div class="job-timeline">
+                                <div class="cv-job-period">
+                                    <h4>{{ 'app.jobs.job2.period' | trans }}</h4>
+                                </div>
+                                <div class="cv-job-description">
+                                    <h3>{{ 'app.job.description' | trans }}</h3>
+                                    <p>{{ 'app.jobs.job2.description' | trans }}</p>
+                                </div>
+                                <div class="cv-job-actions">
+                                    <h3>{{ 'app.job.actions' | trans }}</h3>
+                                    <ul>
+                                        <li>
+                                            {{ 'app.jobs.job2.actions.action1' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job2.actions.action2' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job2.actions.action3' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job2.actions.action4' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job2.actions.action5' | trans }}
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cv-job-technologies">
+                                    <h3>{{ 'app.job.technologies' | trans }}</h3>
+                                    <ul>
+                                        <li>
+                                            {{ 'app.jobs.job2.technologies.techno1' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job2.technologies.techno2' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job2.technologies.techno3' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job2.technologies.techno4' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job2.technologies.techno5' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job2.technologies.techno6' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job2.technologies.techno7' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job2.technologies.techno8' | trans }}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li-timeline">
+                            <div class="job-timeline">
+                                <div class="cv-job-period">
+                                    <h4>{{ 'app.jobs.job1.period' | trans }}</h4>
+                                </div>
+                                <div class="cv-job-description">
+                                    <h3>{{ 'app.job.description' | trans }}</h3>
+                                    <p>{{ 'app.jobs.job1.description' | trans }}</p>
+                                </div>
+                                <div class="cv-job-actions">
+                                    <h3>{{ 'app.job.actions' | trans }}</h3>
+                                    <ul>
+                                        <li>
+                                            {{ 'app.jobs.job1.actions.action1' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job1.actions.action2' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job1.actions.action3' | trans }}
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cv-job-technologies">
+                                    <h3>{{ 'app.job.technologies' | trans }}</h3>
+                                    <ul>
+                                        <li>
+                                            {{ 'app.jobs.job1.technologies.techno1' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job1.technologies.techno2' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job1.technologies.techno3' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job1.technologies.techno4' | trans }}
+                                        </li>
+                                        <li>
+                                            {{ 'app.jobs.job1.technologies.techno5' | trans }}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cv-section-skills cv-box2 col-lg-12">
+                <div class="col-lg-4">
+                    <h3>{{ 'app.skills.titles.title1' | trans }}</h3>
+                    <div class="cv-separator">
+                        <ul>
+                            <li>
+                                <span>{{ 'app.skills.technologies.techno1' | trans }}</span>
+                                <img src="/img/php.png  " class="img-responsive cv-skills">
+                            </li>
+                            <li>
+                                <span>{{ 'app.skills.technologies.techno2' | trans }}</span>
+                                <img src="/img/symfony.png" class="img-responsive cv-skills">
+                            </li>
+                            <li>
+                                <span>{{ 'app.skills.technologies.techno3' | trans }}</span>
+                                <img src="/img/zend_framework.png" class="img-responsive cv-skills">
+                            </li>
+                            <li>
+                                <span>{{ 'app.skills.technologies.techno4' | trans }}</span>
+                                <img src="/img/java.png" class="img-responsive cv-skills">
+                            </li>
+                            <li>
+                                <span>{{ 'app.skills.technologies.techno5' | trans }}</span>
+                                <img src="/img/spring_mvc.png" class="img-responsive cv-skills">
+                            </li>
+                            <li>
+                                <span>{{ 'app.skills.technologies.techno6' | trans }}</span>
+                                <img src="/img/spring_batch.png" class="img-responsive cv-skills">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h3>{{ 'app.skills.titles.title2' | trans }}</h3>
+                    <div class="cv-separator">
+                        <ul>
+                            <li>
+                                <span>{{ 'app.skills.technologies.techno7' | trans }}</span>
+                                <img src="/img/apache_httpd.jpg" class="img-responsive cv-skills">
+                            </li>
+                            <li>
+                                <span>{{ 'app.skills.technologies.techno8' | trans }}</span>
+                                <img src="/img/apache_tomcat.png" class="img-responsive cv-skills">
+                            </li>
+                            <li>
+                                <span>{{ 'app.skills.technologies.techno9' | trans }}</span>
+                                <img src="/img/jboss_eap.png" class="img-responsive cv-skills">
+                            </li>
+                            <li>
+                                <span>{{ 'app.skills.technologies.techno10' | trans }}</span>
+                                <img src="/img/git.png" class="img-responsive cv-skills">
+                            </li>
+                            <li>
+                                <span>{{ 'app.skills.technologies.techno11' | trans }}</span>
+                                <img src="/img/gitlab.jpg" class="img-responsive cv-skills">
+                            </li>
+                            <li>
+                                <span>{{ 'app.skills.technologies.techno12' | trans }}</span>
+                                <img src="/img/openshift.jpg" class="img-responsive cv-skills">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h3>{{ 'app.skills.titles.title3' | trans }}</h3>
+                    <ul>
+                        <li>
+                            <span>{{ 'app.skills.technologies.techno1' | trans }}</span>
+                            <img src="/img/php.png" class="img-responsive cv-skills">
+                        </li>
+                        <li>
+                            <span>{{ 'app.skills.technologies.techno2' | trans }}</span>
+                            <img src="/img/symfony.png" class="img-responsive cv-skills">
+                        </li>
+                        <li>
+                            <span>{{ 'app.skills.technologies.techno3' | trans }}</span>
+                            <img src="/img/zend_framework.png" class="img-responsive cv-skills">
+                        </li>
+                        <li>
+                            <span>{{ 'app.skills.technologies.techno4' | trans }}</span>
+                            <img src="/img/java.png" class="img-responsive cv-skills">
+                        </li>
+                        <li>
+                            <span>{{ 'app.skills.technologies.techno5' | trans }}</span>
+                            <img src="/img/spring_mvc.png" class="img-responsive cv-skills">
+                        </li>
+                        <li>
+                            <span>{{ 'app.skills.technologies.techno5' | trans }}</span>
+                            <img src="/img/spring_batch.png" class="img-responsive cv-skills">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.2.min.js"></script>
+</body>
+<footer class="cv-footer">
+</footer>
+</html>

@@ -9,7 +9,7 @@
 }
 
 #intro {
-    background-image: linear-gradient(to bottom, darkcyan 50%, lightcyan 100%)
+    background-image: linear-gradient(to bottom, #006666 50%, #009999 100%)
     /*background: url('/img/background_1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -34,19 +34,64 @@
     background-color: white;
 }
 
+#activities {
+    background-color: white;
+}
+
+#contact {
+    background-color: white;
+}
+
 .container .row h1 {
     color: darkcyan;
+}
+
+.a:hover, a:active, a:focus, a:link {
+    text-decoration: none;
+}
+
+#about img {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.cv-arrow, .cv-arrow:focus, .cv-arrow:active {
+    font-size: 100px;
+    color: #d5d5d5;
+    transform: rotate(90deg);
+    display: inline-block;
+}
+.cv-arrow:hover {
+    color: #FFFFFF;
+}
+.reverse.cv-arrow, .reverse.cv-arrow:focus, .reverse.cv-arrow:active {
+    font-size: 100px;
+    color: #009999;
+    transform: rotate(90deg);
+    display: inline-block;
+}
+.reverse.cv-arrow:hover {
+    color: #00AAAA;
 }
 
 .cv-name {
     font-family: 'Helvetica', Fallback, sans-sherif;
     font-size: 80px;
-    color:snow;
+    color:#e6e6e6;
 }
 .cv-job {
     font-size: 70px;
     font-family: 'Helvetica', Fallback, sans-sherif;
-    color: whitesmoke;
+    color: #e6e6e6;
+}
+.cv-job2 {
+    font-size: 70px;
+    font-family: 'Helvetica', Fallback, sans-sherif;
+    color: darkcyan;
+}
+.cv-section-intro {
+    padding-bottom: 30px;
+    text-align: center;
 }
 .cv-company-logo {
 
@@ -54,11 +99,13 @@
 .cv-company {
     font-size: 60px;
     font-family: 'Helvetica', Fallback, sans-sherif;
-    color:lightgrey;
+    color: #c0c0c0;
 }
 .cv-description {
     padding-top: 50px;
     font-size: 30px;
+    font-family: 'Helvetica', Fallback, sans-sherif;
+    color: #808080;
 }
 
 .cv-header-head {
@@ -77,21 +124,11 @@
     padding-left: 0px;
     border: solid darkcyan;
 }
-.cv-left {
-    /*float:left;
-    width: 50%;
-    height: 100%;*/
-    /*background-color: gre*/
-    /*background: url('/img/benoit_goepfert.png') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;*/
-}
-.cv-right {
-    /*float: left;
-    width: 50%;
-    height: 100%;*/
+.cv-box2 {
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 0px;
+    border: solid darkcyan;
 }
 .cv-label {
     text-align: right;
@@ -100,6 +137,7 @@
 }
 .cv-field {
     text-align: left;
+    color: lightslategray;
 }
 .cv-profile {
     font-family: 'Helvetica', Fallback, sans-sherif;
@@ -119,7 +157,74 @@
     font-size: 30px;
     text-align: right;
 }
+.cv-section-profile img {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.cv-section-skills {
+    text-align: center;
+}
+.cv-section-skills li {
+    list-style-type: none;
+    display: block;
+}
+.cv-section-skills li > span {
+    display: inline-block;
+    font-family: 'Helvetica', Fallback, sans-sherif;
+    font-size: 20px;
+    text-align: right;
+    color: lightslategray;
+}
+.cv-section-skills > div {
+    padding-bottom: 20px;
+}
+.cv-section-skills li > img {
+    display: inline-block;
+}
+.cv-skills {
+    max-width: 25%;
+    max-height: 25%;
+}
+.cv-separator {
+    border-right: 1px solid darkcyan;
+    padding:10px;
+}
+.cv-footer {
+    padding-bottom: 200px;
+}
+.cv-header {
+    padding-top: 50px;
+}
+.cv-php {
 
+}
+.cv-java {
+    position: relative;
+    top:45%;
+    left:20%;
+}
+.cv-openshift {
+    position: relative;
+    top:85%;
+    left:60%;
+}
+.cv-gitlab {
+    position: relative;
+    top:70%;
+    left:30%;
+}
+.cv-oracle {
+    position: relative;
+    top:55%;
+    left:35%;
+}
+.cv-oracle {
+    position: relative;
+    top:55%;
+    left:35%;
+}
+
+/* timeline */
 .timeline ul.ul-timeline li.li-timeline {
   list-style-type: none;
   position: relative;

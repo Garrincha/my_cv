@@ -1,15 +1,18 @@
 app:
   title:
+    main: CV Benoit Goepfert
     intro: Introduction
     background: Expérience Professionnelle
     skills: Compétences techniques
     activites: Loisirs & acivités
     contact: Contact
     about: Présentation
+  label:
+    company: à
   intro:
-    job: Software Engineer
+    job: Développeur
     company: Sopra Steria
-    description: Développeur Java/PHP curieux et enthousiaste, je suis particulièrement intéressé par les nouvelles méthodologies agile/devops/software craftmanshift depuis quelques temps. Assistant régulièrement à des meetups et des conférences, j'essaie d'amener de la rigueur, de l'exigence et de la bonne humeur au sein des projets auxquels je participe.
+    description: Développeur Java/PHP dynamique et entousiaste, curieux de nouvelles technologies et de nouvelles méthodologies de type agile/devops/craftmanshift.
   about:
     firstname: Prénom
     lastname: Nom
@@ -18,4 +21,83 @@ app:
     email: Adresse email
     adress: Adresse postale
     profile: Profil
-    contact: Contact    
+    contact: Contact
+  skills:
+    titles:
+      title1: Langages & Frameworks
+      title2: Outils
+      title3: Méthodologies
+    technologies:
+      techno1: PHP 5.6
+      techno2: Symfony 2.8
+      techno3: Zend Framework 1.12
+      techno4: Java 1.7
+      techno5: Spring MVC
+      techno6: Spring Batch
+      techno7: JBoss EAP
+      techno8: Apache HTTP Server
+      techno9: Apache Tomcat
+      techno10: Oracle SGBD
+      techno11: Mysql
+      techno12: PostgreSQL
+      techno13: Redhat Openshift
+      techno14: Bootstrap/Jquery
+      techno15: Agilité
+      techno16: Devops
+      techno17: Software craftmanshift
+  job:
+    period: Period
+    description: Description de la mission
+    actions: Actions réalisées
+    technologies: Technologies utilisées
+  jobs:
+    job3:
+      period: Juillet 2016 - Présent
+      description: Au sein de la nouvelle filière Digitale de la CNAMTS, la mission consiste à développer des projets de build en 3 mois en mode agile/devops en collaboration avec les équipes client (Architecte, Coach Agile, Product Owners, Ops, Delivery Manager) avec un tech leader expérimenté et en respectant l'ensemble des bonnes pratiques de développement et d'agilité (tests unitaires/intégration/IHM, code review, sprints avec démo et rétro,...).
+      actions:
+        action1: Développement du MVP de projets de build en 3 mois
+        action2: Travail en mode agile/devops au sein d'équipes de 6 à 8 personnes
+        action3: Conception et mise en place de solutions techniques
+        action4: Participation à la communauté technique transverse
+      technologies:
+        techno1: PHP 5.6
+        techno2: Symfony 2.8
+        techno3: Redhat Openshift
+        techno4: ElasticSearch / Kibana
+        techno5: Trello
+        techno6: Gitlab
+        techno7: Ceph (Amazon S3)
+        techno8: PostgreSQL
+        techno9: Selenium
+    job2:
+      period: Juin 2015 – Mai 2016
+      description: Après la prise en main de l'application et la mise en place de plateformes pour des tests de performances, l'essentiel de mon activité sur le projet a consisté en la conception complète (en collaboration avec un architecte) et le développement d'une solution d'un backoffice pour la gestion de données statistiques.
+      actions:
+        action1: Conception et mise en place d'architecture solution
+        action2: Développement d'un projet de build
+        action3: Référent technique
+        action4: Tiers maintenance applicative
+        action5: Mise en place d'un environnement de tests
+      technologies:
+        techno1: PHP 5.5
+        techno2: Zend Framework 1.12
+        techno3: Java 1.6
+        techno4: JBoss EAP 7.1
+        techno5: Spring MVC
+        techno6: Ant
+        techno7: MySql SGBD
+        techno8: Spring Batch
+    job1:
+      period: Juin 2012 - Juin 2015
+      description: Première mission importante sur laquelle j'ai travaillé au sein du plateau de la CNAMTS, j'ai pu progressivement progresser jusqu'à devenir référent technique de l'application au sein d'une équipe de 10 personnes dont 5 développeurs. En collaboration étroite avec l'ensemble des intervenants client, en particulier exploitants et le métier, ce projet m'a permis d'apprendre à travailler sur un grand projet en production (plusieurs centaines d'agent travaillant exclusivement sur l'application quotidiennement) et à gérer une équipe de développeurs.
+      actions:
+        action1: Maintien en conditions opérationnelles de l'application
+        action2: Conception et développement de solutions applicatives
+        action3: Référent technique de l'application à partir de mai 2013
+      technologies:
+        techno1: PHP 5.3
+        techno2: Architecture REST
+        techno3: Apache HTTP Server
+        techno4: Oracle SGBD
+        techno5: Apache Solr
+        techno6: Javscript (Jquery)

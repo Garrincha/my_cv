@@ -21,6 +21,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 $app->register(new Silex\Provider\LocaleServiceProvider());
 $app->register(new Silex\Provider\TranslationServiceProvider(), array(
     'locale_fallbacks' => array('en'),
+    'locale' => 'fr',
 ));
 
 $app->extend('translator', function ($translator, $app) {
@@ -36,14 +37,17 @@ $app->register(new YamlConfigServiceProvider(__DIR__.'/parameters.yml'));
 
 //routes
 $app->get('/', function () use ($app) {
-    return $app['twig']->render('cv.html.twig', [
+    return $app['twig']->render('cv2.html.twig', [
         'data' => $app['config']['parameters']
     ]);
 });
 
-$app->get('/{_locale}', function ($message, $name) use ($app) {
-    return $app['translator']->trans($message, array('%name%' => $name));
-});
+// $app->get('/fr', function () use ($app) {
+//     return $app['twig']->render('cv2.html.twig', [
+//         'data' => $app['config']['parameters']
+//     ]);
+// });
+
 
 //run
 $app->run();

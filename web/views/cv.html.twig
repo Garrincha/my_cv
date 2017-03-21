@@ -17,7 +17,7 @@
 
     <!-- Custom CSS -->
     <link href="/css/scrolling-nav.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/main.scss" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -67,7 +67,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand page-scroll cv-header-head" href="#page-top">{{ data.firstName }} {{ data.lastName }}</a>
+                    <a class="navbar-brand page-scroll cv-header-head" href="#page-top">{{ 'app.title.main' | trans }}</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -107,9 +107,9 @@
                 <div class="col-lg-12">
                     <!-- <h1 class="cv-name">{{ data.name }}</h1> -->
                     <h2 class="cv-job">{{ 'app.intro.job' | trans }}</h2>
-                    <h3 class="cv-company">{{ 'app.intro.company' | trans }}</h3>
                     <p class="cv-description">{{ 'app.intro.description' | trans }}</p>
                     <!-- <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a> -->
+                    <a class="cv-arrow page-scroll" href="#about">&#10162;</a>
                 </div>
             </div>
         </div>
@@ -123,12 +123,12 @@
                     <h1>{{ 'app.title.about'|trans }}</h1>
                     <div  class="cv-box col-lg-12">
                         <div class="row">
-                            <div class="col-lg-5">
+                            <div class="col-lg-4">
                                 <!-- <div class="col-lg-1"></div> -->
                                 <img src='/img/benoit_goepfert.png' class='img-responsive' alt='me'>
                                 <!-- <div class="col-lg-1"></div> -->
                             </div>
-                            <div class="col-lg-7">
+                            <div class="col-lg-8">
                                 <div class="cv-profile-head col-lg-12">{{ 'app.about.profile'|trans }}</div>
                                 <div class="cv-profile col-lg-12">
                                     <div class="cv-label col-lg-6">{{ 'app.about.firstname'|trans }}</div>
@@ -167,6 +167,7 @@
                             </div>
                         </div> -->
                     </div>
+                    <a class="cv-arrow reverse page-scroll" href="#background">&#10162;</a>
                     <!-- <div class="section bottom">
                         <a class="btn btn-default page-scroll" href="#background">Suite</a>
                     </div> -->
@@ -176,7 +177,7 @@
     </section>
 
     <!-- Background Section -->
-    <section id="background" class="background-section">
+    <section id="background" class="background-section hidden">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -299,9 +300,6 @@
                                             <li>
                                                 {{ 'app.jobs.job2.technologies.techno8' | trans }}
                                             </li>
-                                            <li>
-                                                {{ 'app.jobs.job2.technologies.techno9' | trans }}
-                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -366,6 +364,14 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>{{ 'app.title.skills'|trans }}</h1>
+                    <div>
+                        <div class="cv-php"></div>
+                        <img src="/img/php.jpg" class="img-responsive cv-skills cv-php">
+                        <img src="/img/gitlab.png" class="img-responsive cv-skills cv-gitlab">
+                        <img src="/img/java.png" class="img-responsive cv-skills cv-java">
+                        <img src="/img/openshift.png" class="img-responsive cv-skills cv-openshift">
+                        <img src="/img/oracle.jpg" class="img-responsive cv-skills cv-oracle">
+                    </div>
                     <!-- <a class="btn btn-default page-scroll" href="#activities">Click Me to Scroll Down!</a> -->
                 </div>
             </div>
