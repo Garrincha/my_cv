@@ -12,7 +12,7 @@ app:
   intro:
     job: Développeur
     company: Sopra Steria
-    description: Développeur Java/PHP dynamique et entousiaste, curieux de nouvelles technologies et de nouvelles méthodologies de type agile/devops/craftmanshift.
+    description: Développeur Java/PHP dynamique et entousiaste, curieux de nouvelles technologies et de nouvelles méthodologies.
   about:
     firstname: Prénom
     lastname: Nom
@@ -22,29 +22,56 @@ app:
     adress: Adresse postale
     profile: Profil
     contact: Contact
+  others:
+    languages:
+      title: Langues parlées
+      english: Anglais
+      spanish: Espagnol
+      japanese: Japonais
+    entertainment:
+      title: Autres activités
+      football:
+        title: Football
+        details: 12 ans en club
+      sports:
+        title: Course à pied
+        details: Compétitions individuelles et en équipes régulières
+      travel:
+        title: Culture
+        details: Stage de 6 mois au Japon (2011)
   skills:
     titles:
       title1: Langages & Frameworks
       title2: Outils
       title3: Méthodologies
-    technologies:
-      techno1: PHP 5.6
-      techno2: Symfony 2.8
-      techno3: Zend Framework 1.12
-      techno4: Java 1.7
-      techno5: Spring MVC
-      techno6: Spring Batch
-      techno7: JBoss EAP
-      techno8: Apache HTTP Server
-      techno9: Apache Tomcat
-      techno10: Oracle SGBD
-      techno11: Mysql
-      techno12: PostgreSQL
-      techno13: Redhat Openshift
-      techno14: Bootstrap/Jquery
-      techno15: Agilité
-      techno16: Devops
-      techno17: Software craftmanshift
+    languages:
+      php: PHP 5.6
+      java: Java 1.7
+    frameworks:
+      zend: Zend Framework 1.12
+      symfony: Symfony 2.8
+      spring_mvc: Spring MVC
+      spring_batch: Spring Batch
+      bootstrap: Bootstrap/Jquery
+    servers:
+      apache_httpd: Apache HTTP Server
+      apache_tomcat: Apache Tomcat
+      jboss_eap: JBoss EAP
+    tools:
+      git: git
+      gitlab: Gitlab
+      openshift: Redhat Openshift
+      oracle_sgbd: Oracle SGBD
+      mysql: Mysql
+      postgresql: PostgreSQL
+      elasticsearch: elasticsearch
+      kibana: Kibana
+    methodologies:
+      agile: Agilité
+      devops: Devops
+      craftsmanshift: Software craftsmanshift
+    events:
+      meetup: Meetup
   job:
     period: Period
     description: Description de la mission

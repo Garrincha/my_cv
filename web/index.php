@@ -12,6 +12,10 @@ $app = new Silex\Application();
 
 //options
 $app['debug'] = true;
+$app['default_settings'] = [
+    'encoding' => 'latin-1',
+    'page-size' => 'Letter',
+    ];
 
 //register
 $app->register(new Silex\Provider\TwigServiceProvider(), array(

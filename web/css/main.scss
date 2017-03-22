@@ -175,6 +175,25 @@
     text-align: right;
     color: lightslategray;
 }
+.cv-languages {
+    display: inline-block;
+    font-family: 'Helvetica', Fallback, sans-sherif;
+    font-size: 20px;
+    color: white;
+    border-bottom: 1px solid white;
+    background-color: darkcyan;
+}
+.cv-entertainment-label {
+    font-family: 'Helvetica', Fallback, sans-sherif;
+    font-size: 20px;
+    color: darkcyan;
+    text-align: right;
+}
+.cv-entertainment-field {
+    font-family: 'Helvetica', Fallback, sans-sherif;
+    font-size: 20px;
+    color: lightslategray;
+}
 .cv-section-skills > div {
     padding-bottom: 20px;
 }
@@ -187,6 +206,7 @@
 }
 .cv-separator {
     border-right: 1px solid darkcyan;
+    border-left: 1px solid darkcyan;
     padding:10px;
 }
 .cv-footer {
@@ -195,33 +215,16 @@
 .cv-header {
     padding-top: 50px;
 }
-.cv-php {
-
+.cv-contact .cv-label {
+    font-family: 'Helvetica', Fallback, sans-sherif;
+    font-size: 20px;
+    color: darkcyan;
 }
-.cv-java {
-    position: relative;
-    top:45%;
-    left:20%;
-}
-.cv-openshift {
-    position: relative;
-    top:85%;
-    left:60%;
-}
-.cv-gitlab {
-    position: relative;
-    top:70%;
-    left:30%;
-}
-.cv-oracle {
-    position: relative;
-    top:55%;
-    left:35%;
-}
-.cv-oracle {
-    position: relative;
-    top:55%;
-    left:35%;
+.cv-contact img {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
 }
 
 /* timeline */
@@ -290,15 +293,6 @@
 .timeline .cv-job-period {
     border-bottom: solid;
 }
-
-.timeline .cv-job-description {
-
-}
-
-.timeline .cv-job-actions {
-
-}
-
-.timeline .cv-job-skills {
-
+.timeline .cv-job-logos {
+    padding-bottom: 10px;
 }
