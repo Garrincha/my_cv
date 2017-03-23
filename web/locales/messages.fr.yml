@@ -42,8 +42,8 @@ app:
   skills:
     titles:
       title1: Langages & Frameworks
-      title2: Outils
-      title3: Méthodologies
+      title2: Outils & Produits
+      title3: Méthodes & Evênements
     languages:
       php: PHP 5.6
       java: Java 1.7
@@ -67,7 +67,7 @@ app:
       elasticsearch: elasticsearch
       kibana: Kibana
     methodologies:
-      agile: Agilité
+      agile: Agile (type Kanban)
       devops: Devops
       craftsmanshift: Software craftsmanshift
     events:
