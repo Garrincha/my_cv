@@ -8,3 +8,4 @@ technos :
 
 v0.1 : 
 - categories : info, profile, description, skills and others
+- responsive design
